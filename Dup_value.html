@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var my_array = ["a", "b", "c", "b", "c", "d"];
+      var duplicates = [];
+
+      my_array.sort();
+
+      for (var i = 0; i < my_array.length; i++) {
+        if (my_array[i] === my_array[i + 1]) {
+          duplicates.push(my_array[i]);
+        }
+      }
+
+      console.log(duplicates); //duplicate value
+
+      var my_array1 = [1, 1, 2, 3, 4, 3, 5];
+      var cleaned_array = new Set(my_array1);
+      console.log(cleaned_array);   //remove duplicate
+    </script>
+  </body>
+</html>
